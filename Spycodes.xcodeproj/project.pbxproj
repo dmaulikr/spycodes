@@ -1,804 +1,2770 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		1F0C397CB76C8878B24830D2 /* Pods_Spycodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC921B002269746A71C6152 /* Pods_Spycodes.framework */; };
-		630674181D51BE9800339EC8 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630674171D51BE9800339EC8 /* Timer.swift */; };
-		630883681E80E56F006D2428 /* SCAppInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630883671E80E56F006D2428 /* SCAppInfoManager.swift */; };
-		630D15581E99F1B3001C1D87 /* SCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630D15571E99F1B3001C1D87 /* SCLabel.swift */; };
-		632601001F423E0C00E28E9D /* SCToggleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632600FF1F423E0C00E28E9D /* SCToggleViewCell.xib */; };
-		632D31201E9F5C55005D9999 /* SCTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D311F1E9F5C55005D9999 /* SCTextButton.swift */; };
-		633292251E7D0D950090B09D /* SCDisclosureViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633292241E7D0D950090B09D /* SCDisclosureViewCell.swift */; };
-		633292271E7DE8B30090B09D /* SCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633292261E7DE8B30090B09D /* SCTableViewCell.swift */; };
-		6332922B1E7DE9EC0090B09D /* SCLocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332922A1E7DE9EC0090B09D /* SCLocalStorageManager.swift */; };
-		63486DA91D3DE29C00795403 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63486DA81D3DE29C00795403 /* Key.swift */; };
-		635464791EF9FC5C0013A196 /* SCTimelineHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635464781EF9FC5C0013A196 /* SCTimelineHeaderViewCell.swift */; };
-		635599B71F4DD35200508FE9 /* SCPregameMenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599B21F4DD35200508FE9 /* SCPregameMenuContainerViewController.swift */; };
-		635599B81F4DD35200508FE9 /* SCPregameMenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599B31F4DD35200508FE9 /* SCPregameMenuMainViewController.swift */; };
-		635599B91F4DD35200508FE9 /* SCPregameMenuPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599B41F4DD35200508FE9 /* SCPregameMenuPageViewController.swift */; };
-		635599BA1F4DD35200508FE9 /* SCPregameMenuSecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599B51F4DD35200508FE9 /* SCPregameMenuSecondaryViewController.swift */; };
-		635599BB1F4DD35200508FE9 /* SCPregameRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599B61F4DD35200508FE9 /* SCPregameRoomViewController.swift */; };
-		635599BF1F4DD45100508FE9 /* SCModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599BC1F4DD45100508FE9 /* SCModalViewController.swift */; };
-		635599C01F4DD45100508FE9 /* SCPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599BD1F4DD45100508FE9 /* SCPopoverViewController.swift */; };
-		635599C11F4DD45100508FE9 /* SCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599BE1F4DD45100508FE9 /* SCViewController.swift */; };
-		635599C61F4DD8ED00508FE9 /* SCGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599C31F4DD8ED00508FE9 /* SCGameViewController.swift */; };
-		635599C71F4DD8ED00508FE9 /* SCGameHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599C41F4DD8ED00508FE9 /* SCGameHelpViewController.swift */; };
-		635599C81F4DD8ED00508FE9 /* SCTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599C51F4DD8ED00508FE9 /* SCTimelineViewController.swift */; };
-		635599CA1F4DD94F00508FE9 /* SCCustomCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599C91F4DD94F00508FE9 /* SCCustomCategoryViewController.swift */; };
-		635599CE1F4DEF8700508FE9 /* SCAccessCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599CC1F4DEF8700508FE9 /* SCAccessCodeViewController.swift */; };
-		635599CF1F4DEF8700508FE9 /* SCPlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599CD1F4DEF8700508FE9 /* SCPlayerNameViewController.swift */; };
-		635599D31F4DEFBF00508FE9 /* SCMainSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599D11F4DEFBF00508FE9 /* SCMainSettingsViewController.swift */; };
-		635599D41F4DEFBF00508FE9 /* SCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635599D21F4DEFBF00508FE9 /* SCMainViewController.swift */; };
-		635599D71F4E762B00508FE9 /* Spycodes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635599D91F4E762B00508FE9 /* Spycodes.storyboard */; };
-		635599DC1F4E76CC00508FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635599DE1F4E76CC00508FE9 /* LaunchScreen.storyboard */; };
-		635599E31F4E778E00508FE9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 635599E11F4E778E00508FE9 /* Localizable.strings */; };
-		6363EB651E7E4D5600CC287B /* SCUnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363EB641E7E4D5600CC287B /* SCUnderlineTextField.swift */; };
-		6363EB671E7E5A3900CC287B /* SCToggleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6363EB661E7E5A3900CC287B /* SCToggleViewCell.swift */; };
-		6378C6511D4C6F46009BD0CA /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378C6501D4C6F46009BD0CA /* GameMode.swift */; };
-		637F195F1D46010E00FB4047 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F195E1D46010E00FB4047 /* Statistics.swift */; };
-		638350A41EA1E3CF003049EF /* SCImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638350A31EA1E3CF003049EF /* SCImageButton.swift */; };
-		638CE44D1EAB3D4B00033480 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CE44C1EAB3D4B00033480 /* Timeline.swift */; };
-		638CE44F1EAB45A500033480 /* SCTimelineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CE44E1EAB45A500033480 /* SCTimelineViewCell.swift */; };
-		63920A371D3090D60073E7F7 /* SCMultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63920A361D3090D60073E7F7 /* SCMultipeerManager.swift */; };
-		639E17681E00EADB00640540 /* SCSectionHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E17671E00EADB00640540 /* SCSectionHeaderViewCell.swift */; };
-		639F88EE1F0615540082D813 /* SCArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F88E71F0615540082D813 /* SCArray.swift */; };
-		639F88EF1F0615540082D813 /* SCConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F88E81F0615540082D813 /* SCConstants.swift */; };
-		639F88F01F0615540082D813 /* SCFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F88E91F0615540082D813 /* SCFonts.swift */; };
-		639F88F11F0615540082D813 /* SCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F88EA1F0615540082D813 /* SCStates.swift */; };
-		639F88F21F0615540082D813 /* SCStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F88EB1F0615540082D813 /* SCStrings.swift */; };
-		639F88F31F0615540082D813 /* SCUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F88EC1F0615540082D813 /* SCUIColor.swift */; };
-		639F88F41F0615540082D813 /* SCWordBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F88ED1F0615540082D813 /* SCWordBank.swift */; };
-		639F89011F0F2B730082D813 /* SCMultilineToggleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639F89001F0F2B730082D813 /* SCMultilineToggleViewCell.xib */; };
-		639F89031F0F36120082D813 /* ConsolidatedCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F89021F0F36120082D813 /* ConsolidatedCategories.swift */; };
-		63A04D041D1A5713005A2914 /* SCAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A04D031D1A5713005A2914 /* SCAppDelegate.swift */; };
-		63A04D0E1D1A5713005A2914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A04D0D1D1A5713005A2914 /* Assets.xcassets */; };
-		63CB4F081D3CB3C300211D3A /* SCGameRoomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB4F071D3CB3C300211D3A /* SCGameRoomViewCell.swift */; };
-		63CB4F0A1D3CB88D00211D3A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB4F091D3CB88D00211D3A /* Card.swift */; };
-		63CB4F0C1D3CBCBC00211D3A /* CardCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CB4F0B1D3CBCBC00211D3A /* CardCollection.swift */; };
-		63D256811E6BA6BA0061D80C /* SCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D256761E6BA6BA0061D80C /* SCButton.swift */; };
-		63D256821E6BA6BA0061D80C /* SCHelpDescriptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D256771E6BA6BA0061D80C /* SCHelpDescriptionLabel.swift */; };
-		63D256841E6BA6BA0061D80C /* SCLogoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D256791E6BA6BA0061D80C /* SCLogoLabel.swift */; };
-		63D256871E6BA6BA0061D80C /* SCNavigationBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2567C1E6BA6BA0061D80C /* SCNavigationBarLabel.swift */; };
-		63D256881E6BA6BA0061D80C /* SCRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2567D1E6BA6BA0061D80C /* SCRoundedButton.swift */; };
-		63D256891E6BA6BA0061D80C /* SCSingleCharacterTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2567E1E6BA6BA0061D80C /* SCSingleCharacterTextField.swift */; };
-		63D2568A1E6BA6BA0061D80C /* SCStatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2567F1E6BA6BA0061D80C /* SCStatusLabel.swift */; };
-		63D2568B1E6BA6BA0061D80C /* SCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D256801E6BA6BA0061D80C /* SCTextField.swift */; };
-		63D7E73D1EB183EF00B2F536 /* SCReadyStatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7E73C1EB183EF00B2F536 /* SCReadyStatusLabel.swift */; };
-		63D949DA1F16FABE00697779 /* SCPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D949D91F16FABE00697779 /* SCPickerViewCell.swift */; };
-		63D949E21F17F68900697779 /* CustomCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D949E11F17F68900697779 /* CustomCategory.swift */; };
-		63D949E61F18534F00697779 /* SCTextFieldViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63D949E51F18534F00697779 /* SCTextFieldViewCell.xib */; };
-		63D949E81F18553000697779 /* SCTextFieldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D949E71F18553000697779 /* SCTextFieldViewCell.swift */; };
-		63DEDEE81E88921200DE94A1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DEDEE71E88921200DE94A1 /* Event.swift */; };
-		63EAF9A31D41D2E700BC554E /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAF9A21D41D2E700BC554E /* Round.swift */; };
-		63EAF9A51D41F1C400BC554E /* SCAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAF9A41D41F1C400BC554E /* SCAudioManager.swift */; };
-		63FDED351D264BE800142780 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDED341D264BE800142780 /* Player.swift */; };
-		63FDED371D264CF300142780 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDED361D264CF300142780 /* Team.swift */; };
-		63FDED391D26557200142780 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDED381D26557200142780 /* Room.swift */; };
-		63FDED461D28B47200142780 /* SCPregameRoomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FDED451D28B47200142780 /* SCPregameRoomViewCell.swift */; };
-		63FFA4B11D50635B006A181B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FFA4B01D50635B006A181B /* GameKit.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		23F9D4FD36303546D924BA3E /* Pods-Spycodes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spycodes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes.release.xcconfig"; sourceTree = "<group>"; };
-		2842E0F999A033920F646AF6 /* Pods-Spycodes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spycodes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes.debug.xcconfig"; sourceTree = "<group>"; };
-		630674171D51BE9800339EC8 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = Objects/Timer.swift; sourceTree = "<group>"; };
-		630883671E80E56F006D2428 /* SCAppInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCAppInfoManager.swift; path = Managers/SCAppInfoManager.swift; sourceTree = "<group>"; };
-		630D15571E99F1B3001C1D87 /* SCLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLabel.swift; path = Utilities/SCLabel.swift; sourceTree = "<group>"; };
-		632600FF1F423E0C00E28E9D /* SCToggleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SCToggleViewCell.xib; path = Nibs/SCToggleViewCell.xib; sourceTree = "<group>"; };
-		632D311F1E9F5C55005D9999 /* SCTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCTextButton.swift; path = Utilities/SCTextButton.swift; sourceTree = "<group>"; };
-		633292241E7D0D950090B09D /* SCDisclosureViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCDisclosureViewCell.swift; path = Views/SCDisclosureViewCell.swift; sourceTree = "<group>"; };
-		633292261E7DE8B30090B09D /* SCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCTableViewCell.swift; path = Views/SCTableViewCell.swift; sourceTree = "<group>"; };
-		6332922A1E7DE9EC0090B09D /* SCLocalStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLocalStorageManager.swift; path = Managers/SCLocalStorageManager.swift; sourceTree = "<group>"; };
-		63486DA81D3DE29C00795403 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Objects/Key.swift; sourceTree = "<group>"; };
-		63512E051F5083A400837032 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Spycodes.strings"; sourceTree = "<group>"; };
-		63512E061F50A4F900837032 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		63512E071F50A4F900837032 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Spycodes.strings"; sourceTree = "<group>"; };
-		63512E081F50A4F900837032 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "Spycodes/Storyboards/zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		63512E0C1F50A58500837032 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		635464781EF9FC5C0013A196 /* SCTimelineHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCTimelineHeaderViewCell.swift; path = Views/SCTimelineHeaderViewCell.swift; sourceTree = "<group>"; };
-		635599B21F4DD35200508FE9 /* SCPregameMenuContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCPregameMenuContainerViewController.swift; path = ViewControllers/Pregame/SCPregameMenuContainerViewController.swift; sourceTree = "<group>"; };
-		635599B31F4DD35200508FE9 /* SCPregameMenuMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCPregameMenuMainViewController.swift; path = ViewControllers/Pregame/SCPregameMenuMainViewController.swift; sourceTree = "<group>"; };
-		635599B41F4DD35200508FE9 /* SCPregameMenuPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCPregameMenuPageViewController.swift; path = ViewControllers/Pregame/SCPregameMenuPageViewController.swift; sourceTree = "<group>"; };
-		635599B51F4DD35200508FE9 /* SCPregameMenuSecondaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCPregameMenuSecondaryViewController.swift; path = ViewControllers/Pregame/SCPregameMenuSecondaryViewController.swift; sourceTree = "<group>"; };
-		635599B61F4DD35200508FE9 /* SCPregameRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCPregameRoomViewController.swift; path = ViewControllers/Pregame/SCPregameRoomViewController.swift; sourceTree = "<group>"; };
-		635599BC1F4DD45100508FE9 /* SCModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCModalViewController.swift; path = ViewControllers/Base/SCModalViewController.swift; sourceTree = "<group>"; };
-		635599BD1F4DD45100508FE9 /* SCPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCPopoverViewController.swift; path = ViewControllers/Base/SCPopoverViewController.swift; sourceTree = "<group>"; };
-		635599BE1F4DD45100508FE9 /* SCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCViewController.swift; path = ViewControllers/Base/SCViewController.swift; sourceTree = "<group>"; };
-		635599C31F4DD8ED00508FE9 /* SCGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCGameViewController.swift; path = ViewControllers/Game/SCGameViewController.swift; sourceTree = "<group>"; };
-		635599C41F4DD8ED00508FE9 /* SCGameHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCGameHelpViewController.swift; path = ViewControllers/Game/SCGameHelpViewController.swift; sourceTree = "<group>"; };
-		635599C51F4DD8ED00508FE9 /* SCTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCTimelineViewController.swift; path = ViewControllers/Game/SCTimelineViewController.swift; sourceTree = "<group>"; };
-		635599C91F4DD94F00508FE9 /* SCCustomCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCCustomCategoryViewController.swift; path = ViewControllers/Pregame/SCCustomCategoryViewController.swift; sourceTree = "<group>"; };
-		635599CC1F4DEF8700508FE9 /* SCAccessCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCAccessCodeViewController.swift; path = ViewControllers/Entry/SCAccessCodeViewController.swift; sourceTree = "<group>"; };
-		635599CD1F4DEF8700508FE9 /* SCPlayerNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCPlayerNameViewController.swift; path = ViewControllers/Entry/SCPlayerNameViewController.swift; sourceTree = "<group>"; };
-		635599D11F4DEFBF00508FE9 /* SCMainSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCMainSettingsViewController.swift; path = ViewControllers/Main/SCMainSettingsViewController.swift; sourceTree = "<group>"; };
-		635599D21F4DEFBF00508FE9 /* SCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCMainViewController.swift; path = ViewControllers/Main/SCMainViewController.swift; sourceTree = "<group>"; };
-		635599DA1F4E763D00508FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Spycodes.storyboard; sourceTree = "<group>"; };
-		635599DD1F4E76CC00508FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		635599E21F4E778E00508FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Spycodes/Storyboards/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		635599E41F4E77B900508FE9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Spycodes/Storyboards/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		6363EB641E7E4D5600CC287B /* SCUnderlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCUnderlineTextField.swift; path = Utilities/SCUnderlineTextField.swift; sourceTree = "<group>"; };
-		6363EB661E7E5A3900CC287B /* SCToggleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCToggleViewCell.swift; path = Views/SCToggleViewCell.swift; sourceTree = "<group>"; };
-		6378C6501D4C6F46009BD0CA /* GameMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameMode.swift; path = Objects/GameMode.swift; sourceTree = "<group>"; };
-		637F195E1D46010E00FB4047 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Statistics.swift; path = Objects/Statistics.swift; sourceTree = "<group>"; };
-		638350A31EA1E3CF003049EF /* SCImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCImageButton.swift; path = Utilities/SCImageButton.swift; sourceTree = "<group>"; };
-		638CE44C1EAB3D4B00033480 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Objects/Timeline.swift; sourceTree = "<group>"; };
-		638CE44E1EAB45A500033480 /* SCTimelineViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCTimelineViewCell.swift; path = Views/SCTimelineViewCell.swift; sourceTree = "<group>"; };
-		63920A361D3090D60073E7F7 /* SCMultipeerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCMultipeerManager.swift; path = Managers/SCMultipeerManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		639E17671E00EADB00640540 /* SCSectionHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCSectionHeaderViewCell.swift; path = Views/SCSectionHeaderViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		639F88E71F0615540082D813 /* SCArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCArray.swift; path = Core/SCArray.swift; sourceTree = "<group>"; };
-		639F88E81F0615540082D813 /* SCConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCConstants.swift; path = Core/SCConstants.swift; sourceTree = "<group>"; };
-		639F88E91F0615540082D813 /* SCFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCFonts.swift; path = Core/SCFonts.swift; sourceTree = "<group>"; };
-		639F88EA1F0615540082D813 /* SCStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCStates.swift; path = Core/SCStates.swift; sourceTree = "<group>"; };
-		639F88EB1F0615540082D813 /* SCStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCStrings.swift; path = Core/SCStrings.swift; sourceTree = "<group>"; };
-		639F88EC1F0615540082D813 /* SCUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCUIColor.swift; path = Core/SCUIColor.swift; sourceTree = "<group>"; };
-		639F88ED1F0615540082D813 /* SCWordBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCWordBank.swift; path = Core/SCWordBank.swift; sourceTree = "<group>"; };
-		639F89001F0F2B730082D813 /* SCMultilineToggleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SCMultilineToggleViewCell.xib; path = Nibs/SCMultilineToggleViewCell.xib; sourceTree = "<group>"; };
-		639F89021F0F36120082D813 /* ConsolidatedCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsolidatedCategories.swift; path = Objects/ConsolidatedCategories.swift; sourceTree = "<group>"; };
-		63A04D001D1A5713005A2914 /* Spycodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spycodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		63A04D031D1A5713005A2914 /* SCAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SCAppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63A04D0D1D1A5713005A2914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63A04D121D1A5713005A2914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63CB4F071D3CB3C300211D3A /* SCGameRoomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCGameRoomViewCell.swift; path = Views/SCGameRoomViewCell.swift; sourceTree = "<group>"; };
-		63CB4F091D3CB88D00211D3A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Objects/Card.swift; sourceTree = "<group>"; };
-		63CB4F0B1D3CBCBC00211D3A /* CardCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = CardCollection.swift; path = Objects/CardCollection.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D256761E6BA6BA0061D80C /* SCButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCButton.swift; path = Utilities/SCButton.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D256771E6BA6BA0061D80C /* SCHelpDescriptionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCHelpDescriptionLabel.swift; path = Utilities/SCHelpDescriptionLabel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D256791E6BA6BA0061D80C /* SCLogoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCLogoLabel.swift; path = Utilities/SCLogoLabel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D2567C1E6BA6BA0061D80C /* SCNavigationBarLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCNavigationBarLabel.swift; path = Utilities/SCNavigationBarLabel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D2567D1E6BA6BA0061D80C /* SCRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCRoundedButton.swift; path = Utilities/SCRoundedButton.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D2567E1E6BA6BA0061D80C /* SCSingleCharacterTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCSingleCharacterTextField.swift; path = Utilities/SCSingleCharacterTextField.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D2567F1E6BA6BA0061D80C /* SCStatusLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCStatusLabel.swift; path = Utilities/SCStatusLabel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D256801E6BA6BA0061D80C /* SCTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCTextField.swift; path = Utilities/SCTextField.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63D7E73C1EB183EF00B2F536 /* SCReadyStatusLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCReadyStatusLabel.swift; path = Utilities/SCReadyStatusLabel.swift; sourceTree = "<group>"; };
-		63D949D91F16FABE00697779 /* SCPickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCPickerViewCell.swift; path = Views/SCPickerViewCell.swift; sourceTree = "<group>"; };
-		63D949E11F17F68900697779 /* CustomCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCategory.swift; path = Objects/CustomCategory.swift; sourceTree = "<group>"; };
-		63D949E51F18534F00697779 /* SCTextFieldViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SCTextFieldViewCell.xib; path = Nibs/SCTextFieldViewCell.xib; sourceTree = "<group>"; };
-		63D949E71F18553000697779 /* SCTextFieldViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCTextFieldViewCell.swift; path = Views/SCTextFieldViewCell.swift; sourceTree = "<group>"; };
-		63DEDEE71E88921200DE94A1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Objects/Event.swift; sourceTree = "<group>"; };
-		63EAF9A21D41D2E700BC554E /* Round.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Round.swift; path = Objects/Round.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63EAF9A41D41F1C400BC554E /* SCAudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCAudioManager.swift; path = Managers/SCAudioManager.swift; sourceTree = "<group>"; };
-		63FDED341D264BE800142780 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Player.swift; path = Objects/Player.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63FDED361D264CF300142780 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = Objects/Team.swift; sourceTree = "<group>"; };
-		63FDED381D26557200142780 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = Room.swift; path = Objects/Room.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63FDED451D28B47200142780 /* SCPregameRoomViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SCPregameRoomViewCell.swift; path = Views/SCPregameRoomViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		63FFA4B01D50635B006A181B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		9CC921B002269746A71C6152 /* Pods_Spycodes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spycodes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		63A04CFD1D1A5713005A2914 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63FFA4B11D50635B006A181B /* GameKit.framework in Frameworks */,
-				1F0C397CB76C8878B24830D2 /* Pods_Spycodes.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		635599B11F4DD2C800508FE9 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				635599BC1F4DD45100508FE9 /* SCModalViewController.swift */,
-				635599BD1F4DD45100508FE9 /* SCPopoverViewController.swift */,
-				635599BE1F4DD45100508FE9 /* SCViewController.swift */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		635599C21F4DD8D300508FE9 /* Game */ = {
-			isa = PBXGroup;
-			children = (
-				635599C31F4DD8ED00508FE9 /* SCGameViewController.swift */,
-				635599C41F4DD8ED00508FE9 /* SCGameHelpViewController.swift */,
-				635599C51F4DD8ED00508FE9 /* SCTimelineViewController.swift */,
-			);
-			name = Game;
-			sourceTree = "<group>";
-		};
-		635599CB1F4DEEFB00508FE9 /* Entry */ = {
-			isa = PBXGroup;
-			children = (
-				635599CC1F4DEF8700508FE9 /* SCAccessCodeViewController.swift */,
-				635599CD1F4DEF8700508FE9 /* SCPlayerNameViewController.swift */,
-			);
-			name = Entry;
-			sourceTree = "<group>";
-		};
-		635599D01F4DEFAE00508FE9 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				635599D11F4DEFBF00508FE9 /* SCMainSettingsViewController.swift */,
-				635599D21F4DEFBF00508FE9 /* SCMainViewController.swift */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		63920A351D3090BC0073E7F7 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				630883671E80E56F006D2428 /* SCAppInfoManager.swift */,
-				63EAF9A41D41F1C400BC554E /* SCAudioManager.swift */,
-				6332922A1E7DE9EC0090B09D /* SCLocalStorageManager.swift */,
-				63920A361D3090D60073E7F7 /* SCMultipeerManager.swift */,
-			);
-			name = Managers;
-			sourceTree = "<group>";
-		};
-		639F88FF1F0F25660082D813 /* Nibs */ = {
-			isa = PBXGroup;
-			children = (
-				639F89001F0F2B730082D813 /* SCMultilineToggleViewCell.xib */,
-				63D949E51F18534F00697779 /* SCTextFieldViewCell.xib */,
-				632600FF1F423E0C00E28E9D /* SCToggleViewCell.xib */,
-			);
-			name = Nibs;
-			sourceTree = "<group>";
-		};
-		63A04CF71D1A5713005A2914 = {
-			isa = PBXGroup;
-			children = (
-				63FFA4B01D50635B006A181B /* GameKit.framework */,
-				63A04D021D1A5713005A2914 /* Spycodes */,
-				63A04D011D1A5713005A2914 /* Products */,
-				B7BF666BAA7B3C26C5B6A539 /* Pods */,
-				7EF9474D1A1202AA6DB0DBB4 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		63A04D011D1A5713005A2914 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				63A04D001D1A5713005A2914 /* Spycodes.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		63A04D021D1A5713005A2914 /* Spycodes */ = {
-			isa = PBXGroup;
-			children = (
-				63A04D031D1A5713005A2914 /* SCAppDelegate.swift */,
-				63A04D0D1D1A5713005A2914 /* Assets.xcassets */,
-				63A04D121D1A5713005A2914 /* Info.plist */,
-				63A04D1B1D1A7F2B005A2914 /* Core */,
-				63920A351D3090BC0073E7F7 /* Managers */,
-				639F88FF1F0F25660082D813 /* Nibs */,
-				63FDED331D264BD800142780 /* Objects */,
-				63FA54E31D1BCFA6004515DA /* Storyboards */,
-				63D256751E6BA6600061D80C /* Utilities */,
-				63A04D1A1D1A7F25005A2914 /* View Controllers */,
-				63FDED421D28B42300142780 /* Views */,
-			);
-			path = Spycodes;
-			sourceTree = "<group>";
-		};
-		63A04D1A1D1A7F25005A2914 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				635599B11F4DD2C800508FE9 /* Base */,
-				635599CB1F4DEEFB00508FE9 /* Entry */,
-				635599C21F4DD8D300508FE9 /* Game */,
-				635599D01F4DEFAE00508FE9 /* Main */,
-				63A3E1E71F3450CD00657243 /* Pregame */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		63A04D1B1D1A7F2B005A2914 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				639F88E71F0615540082D813 /* SCArray.swift */,
-				639F88E81F0615540082D813 /* SCConstants.swift */,
-				639F88E91F0615540082D813 /* SCFonts.swift */,
-				639F88EA1F0615540082D813 /* SCStates.swift */,
-				639F88EB1F0615540082D813 /* SCStrings.swift */,
-				639F88EC1F0615540082D813 /* SCUIColor.swift */,
-				639F88ED1F0615540082D813 /* SCWordBank.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		63A3E1E71F3450CD00657243 /* Pregame */ = {
-			isa = PBXGroup;
-			children = (
-				635599C91F4DD94F00508FE9 /* SCCustomCategoryViewController.swift */,
-				635599B21F4DD35200508FE9 /* SCPregameMenuContainerViewController.swift */,
-				635599B31F4DD35200508FE9 /* SCPregameMenuMainViewController.swift */,
-				635599B41F4DD35200508FE9 /* SCPregameMenuPageViewController.swift */,
-				635599B51F4DD35200508FE9 /* SCPregameMenuSecondaryViewController.swift */,
-				635599B61F4DD35200508FE9 /* SCPregameRoomViewController.swift */,
-			);
-			name = Pregame;
-			sourceTree = "<group>";
-		};
-		63D256751E6BA6600061D80C /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				63D256761E6BA6BA0061D80C /* SCButton.swift */,
-				63D256771E6BA6BA0061D80C /* SCHelpDescriptionLabel.swift */,
-				638350A31EA1E3CF003049EF /* SCImageButton.swift */,
-				630D15571E99F1B3001C1D87 /* SCLabel.swift */,
-				63D256791E6BA6BA0061D80C /* SCLogoLabel.swift */,
-				63D2567C1E6BA6BA0061D80C /* SCNavigationBarLabel.swift */,
-				63D7E73C1EB183EF00B2F536 /* SCReadyStatusLabel.swift */,
-				63D2567D1E6BA6BA0061D80C /* SCRoundedButton.swift */,
-				63D2567E1E6BA6BA0061D80C /* SCSingleCharacterTextField.swift */,
-				63D2567F1E6BA6BA0061D80C /* SCStatusLabel.swift */,
-				632D311F1E9F5C55005D9999 /* SCTextButton.swift */,
-				63D256801E6BA6BA0061D80C /* SCTextField.swift */,
-				6363EB641E7E4D5600CC287B /* SCUnderlineTextField.swift */,
-			);
-			name = Utilities;
-			sourceTree = "<group>";
-		};
-		63FA54E31D1BCFA6004515DA /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				635599E11F4E778E00508FE9 /* Localizable.strings */,
-				635599DE1F4E76CC00508FE9 /* LaunchScreen.storyboard */,
-				635599D91F4E762B00508FE9 /* Spycodes.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
-		63FDED331D264BD800142780 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				63CB4F091D3CB88D00211D3A /* Card.swift */,
-				63CB4F0B1D3CBCBC00211D3A /* CardCollection.swift */,
-				639F89021F0F36120082D813 /* ConsolidatedCategories.swift */,
-				63D949E11F17F68900697779 /* CustomCategory.swift */,
-				63DEDEE71E88921200DE94A1 /* Event.swift */,
-				6378C6501D4C6F46009BD0CA /* GameMode.swift */,
-				63486DA81D3DE29C00795403 /* Key.swift */,
-				63FDED341D264BE800142780 /* Player.swift */,
-				63FDED381D26557200142780 /* Room.swift */,
-				63EAF9A21D41D2E700BC554E /* Round.swift */,
-				637F195E1D46010E00FB4047 /* Statistics.swift */,
-				63FDED361D264CF300142780 /* Team.swift */,
-				638CE44C1EAB3D4B00033480 /* Timeline.swift */,
-				630674171D51BE9800339EC8 /* Timer.swift */,
-			);
-			name = Objects;
-			sourceTree = "<group>";
-		};
-		63FDED421D28B42300142780 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				633292241E7D0D950090B09D /* SCDisclosureViewCell.swift */,
-				63CB4F071D3CB3C300211D3A /* SCGameRoomViewCell.swift */,
-				63D949D91F16FABE00697779 /* SCPickerViewCell.swift */,
-				63FDED451D28B47200142780 /* SCPregameRoomViewCell.swift */,
-				639E17671E00EADB00640540 /* SCSectionHeaderViewCell.swift */,
-				633292261E7DE8B30090B09D /* SCTableViewCell.swift */,
-				63D949E71F18553000697779 /* SCTextFieldViewCell.swift */,
-				635464781EF9FC5C0013A196 /* SCTimelineHeaderViewCell.swift */,
-				638CE44E1EAB45A500033480 /* SCTimelineViewCell.swift */,
-				6363EB661E7E5A3900CC287B /* SCToggleViewCell.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		7EF9474D1A1202AA6DB0DBB4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9CC921B002269746A71C6152 /* Pods_Spycodes.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B7BF666BAA7B3C26C5B6A539 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2842E0F999A033920F646AF6 /* Pods-Spycodes.debug.xcconfig */,
-				23F9D4FD36303546D924BA3E /* Pods-Spycodes.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		63A04CFF1D1A5713005A2914 /* Spycodes */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63A04D151D1A5713005A2914 /* Build configuration list for PBXNativeTarget "Spycodes" */;
-			buildPhases = (
-				A099851FC276BA395E02AB40 /* [CP] Check Pods Manifest.lock */,
-				63A04CFC1D1A5713005A2914 /* Sources */,
-				63A04CFD1D1A5713005A2914 /* Frameworks */,
-				63A04CFE1D1A5713005A2914 /* Resources */,
-				1AF75283B65C4B918EC70F67 /* [CP] Embed Pods Frameworks */,
-				CED194B1897EE1C60EC80831 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Spycodes;
-			productName = Spycodes;
-			productReference = 63A04D001D1A5713005A2914 /* Spycodes.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		63A04CF81D1A5713005A2914 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = "David Zhang";
-				TargetAttributes = {
-					63A04CFF1D1A5713005A2914 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 3A8NZ732A3;
-						LastSwiftMigration = 0830;
-						SystemCapabilities = {
-							com.apple.GameCenter = {
-								enabled = 1;
-							};
-						};
-					};
-				};
-			};
-			buildConfigurationList = 63A04CFB1D1A5713005A2914 /* Build configuration list for PBXProject "Spycodes" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-				"zh-Hans",
-				"zh-Hant",
-			);
-			mainGroup = 63A04CF71D1A5713005A2914;
-			productRefGroup = 63A04D011D1A5713005A2914 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				63A04CFF1D1A5713005A2914 /* Spycodes */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		63A04CFE1D1A5713005A2914 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63D949E61F18534F00697779 /* SCTextFieldViewCell.xib in Resources */,
-				639F89011F0F2B730082D813 /* SCMultilineToggleViewCell.xib in Resources */,
-				635599D71F4E762B00508FE9 /* Spycodes.storyboard in Resources */,
-				635599E31F4E778E00508FE9 /* Localizable.strings in Resources */,
-				63A04D0E1D1A5713005A2914 /* Assets.xcassets in Resources */,
-				632601001F423E0C00E28E9D /* SCToggleViewCell.xib in Resources */,
-				635599DC1F4E76CC00508FE9 /* LaunchScreen.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1AF75283B65C4B918EC70F67 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ISEmojiView/ISEmojiView.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISEmojiView.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A099851FC276BA395E02AB40 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Spycodes-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CED194B1897EE1C60EC80831 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		63A04CFC1D1A5713005A2914 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63D949DA1F16FABE00697779 /* SCPickerViewCell.swift in Sources */,
-				63FDED371D264CF300142780 /* Team.swift in Sources */,
-				637F195F1D46010E00FB4047 /* Statistics.swift in Sources */,
-				638CE44F1EAB45A500033480 /* SCTimelineViewCell.swift in Sources */,
-				63EAF9A31D41D2E700BC554E /* Round.swift in Sources */,
-				635599CF1F4DEF8700508FE9 /* SCPlayerNameViewController.swift in Sources */,
-				635464791EF9FC5C0013A196 /* SCTimelineHeaderViewCell.swift in Sources */,
-				635599D41F4DEFBF00508FE9 /* SCMainViewController.swift in Sources */,
-				63CB4F0C1D3CBCBC00211D3A /* CardCollection.swift in Sources */,
-				630D15581E99F1B3001C1D87 /* SCLabel.swift in Sources */,
-				6363EB651E7E4D5600CC287B /* SCUnderlineTextField.swift in Sources */,
-				63D256841E6BA6BA0061D80C /* SCLogoLabel.swift in Sources */,
-				63D256871E6BA6BA0061D80C /* SCNavigationBarLabel.swift in Sources */,
-				639F88EF1F0615540082D813 /* SCConstants.swift in Sources */,
-				630674181D51BE9800339EC8 /* Timer.swift in Sources */,
-				63486DA91D3DE29C00795403 /* Key.swift in Sources */,
-				63D256811E6BA6BA0061D80C /* SCButton.swift in Sources */,
-				639F89031F0F36120082D813 /* ConsolidatedCategories.swift in Sources */,
-				639F88F31F0615540082D813 /* SCUIColor.swift in Sources */,
-				63D949E81F18553000697779 /* SCTextFieldViewCell.swift in Sources */,
-				630883681E80E56F006D2428 /* SCAppInfoManager.swift in Sources */,
-				63D2568B1E6BA6BA0061D80C /* SCTextField.swift in Sources */,
-				632D31201E9F5C55005D9999 /* SCTextButton.swift in Sources */,
-				633292271E7DE8B30090B09D /* SCTableViewCell.swift in Sources */,
-				63D256891E6BA6BA0061D80C /* SCSingleCharacterTextField.swift in Sources */,
-				635599C71F4DD8ED00508FE9 /* SCGameHelpViewController.swift in Sources */,
-				635599C11F4DD45100508FE9 /* SCViewController.swift in Sources */,
-				63CB4F081D3CB3C300211D3A /* SCGameRoomViewCell.swift in Sources */,
-				639F88F41F0615540082D813 /* SCWordBank.swift in Sources */,
-				639F88F21F0615540082D813 /* SCStrings.swift in Sources */,
-				6332922B1E7DE9EC0090B09D /* SCLocalStorageManager.swift in Sources */,
-				635599C61F4DD8ED00508FE9 /* SCGameViewController.swift in Sources */,
-				63920A371D3090D60073E7F7 /* SCMultipeerManager.swift in Sources */,
-				635599B81F4DD35200508FE9 /* SCPregameMenuMainViewController.swift in Sources */,
-				638350A41EA1E3CF003049EF /* SCImageButton.swift in Sources */,
-				63D256881E6BA6BA0061D80C /* SCRoundedButton.swift in Sources */,
-				63EAF9A51D41F1C400BC554E /* SCAudioManager.swift in Sources */,
-				63CB4F0A1D3CB88D00211D3A /* Card.swift in Sources */,
-				63D949E21F17F68900697779 /* CustomCategory.swift in Sources */,
-				635599B91F4DD35200508FE9 /* SCPregameMenuPageViewController.swift in Sources */,
-				635599B71F4DD35200508FE9 /* SCPregameMenuContainerViewController.swift in Sources */,
-				63DEDEE81E88921200DE94A1 /* Event.swift in Sources */,
-				639F88F01F0615540082D813 /* SCFonts.swift in Sources */,
-				635599D31F4DEFBF00508FE9 /* SCMainSettingsViewController.swift in Sources */,
-				6363EB671E7E5A3900CC287B /* SCToggleViewCell.swift in Sources */,
-				63D2568A1E6BA6BA0061D80C /* SCStatusLabel.swift in Sources */,
-				638CE44D1EAB3D4B00033480 /* Timeline.swift in Sources */,
-				635599C81F4DD8ED00508FE9 /* SCTimelineViewController.swift in Sources */,
-				635599BA1F4DD35200508FE9 /* SCPregameMenuSecondaryViewController.swift in Sources */,
-				63FDED391D26557200142780 /* Room.swift in Sources */,
-				63D256821E6BA6BA0061D80C /* SCHelpDescriptionLabel.swift in Sources */,
-				6378C6511D4C6F46009BD0CA /* GameMode.swift in Sources */,
-				639E17681E00EADB00640540 /* SCSectionHeaderViewCell.swift in Sources */,
-				639F88EE1F0615540082D813 /* SCArray.swift in Sources */,
-				63FDED461D28B47200142780 /* SCPregameRoomViewCell.swift in Sources */,
-				635599CA1F4DD94F00508FE9 /* SCCustomCategoryViewController.swift in Sources */,
-				635599BF1F4DD45100508FE9 /* SCModalViewController.swift in Sources */,
-				63FDED351D264BE800142780 /* Player.swift in Sources */,
-				635599C01F4DD45100508FE9 /* SCPopoverViewController.swift in Sources */,
-				635599CE1F4DEF8700508FE9 /* SCAccessCodeViewController.swift in Sources */,
-				635599BB1F4DD35200508FE9 /* SCPregameRoomViewController.swift in Sources */,
-				63A04D041D1A5713005A2914 /* SCAppDelegate.swift in Sources */,
-				639F88F11F0615540082D813 /* SCStates.swift in Sources */,
-				633292251E7D0D950090B09D /* SCDisclosureViewCell.swift in Sources */,
-				63D7E73D1EB183EF00B2F536 /* SCReadyStatusLabel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		635599D91F4E762B00508FE9 /* Spycodes.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				635599DA1F4E763D00508FE9 /* Base */,
-				63512E051F5083A400837032 /* zh-Hans */,
-				63512E071F50A4F900837032 /* zh-Hant */,
-			);
-			name = Spycodes.storyboard;
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		635599DE1F4E76CC00508FE9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				635599DD1F4E76CC00508FE9 /* Base */,
-				63512E061F50A4F900837032 /* zh-Hant */,
-				63512E0C1F50A58500837032 /* zh-Hans */,
-			);
-			name = LaunchScreen.storyboard;
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		635599E11F4E778E00508FE9 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				635599E21F4E778E00508FE9 /* Base */,
-				635599E41F4E77B900508FE9 /* zh-Hans */,
-				63512E081F50A4F900837032 /* zh-Hant */,
-			);
-			name = Localizable.strings;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		63A04D131D1A5713005A2914 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		63A04D141D1A5713005A2914 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		63A04D161D1A5713005A2914 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2842E0F999A033920F646AF6 /* Pods-Spycodes.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Spycodes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidzhang.Spycodes;
-				PRODUCT_NAME = Spycodes;
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		63A04D171D1A5713005A2914 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23F9D4FD36303546D924BA3E /* Pods-Spycodes.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Spycodes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidzhang.Spycodes;
-				PRODUCT_NAME = Spycodes;
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		63A04CFB1D1A5713005A2914 /* Build configuration list for PBXProject "Spycodes" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63A04D131D1A5713005A2914 /* Debug */,
-				63A04D141D1A5713005A2914 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		63A04D151D1A5713005A2914 /* Build configuration list for PBXNativeTarget "Spycodes" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63A04D161D1A5713005A2914 /* Debug */,
-				63A04D171D1A5713005A2914 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 63A04CF81D1A5713005A2914 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1AF75283B65C4B918EC70F67</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array>
+				<string>${SRCROOT}/Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes-frameworks.sh</string>
+				<string>${BUILT_PRODUCTS_DIR}/ISEmojiView/ISEmojiView.framework</string>
+			</array>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array>
+				<string>${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISEmojiView.framework</string>
+			</array>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>1F0C397CB76C8878B24830D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9CC921B002269746A71C6152</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>23F9D4FD36303546D924BA3E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Spycodes.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2842E0F999A033920F646AF6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Spycodes.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>630674171D51BE9800339EC8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Timer.swift</string>
+			<key>path</key>
+			<string>Objects/Timer.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>630674181D51BE9800339EC8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>630674171D51BE9800339EC8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>630883671E80E56F006D2428</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCAppInfoManager.swift</string>
+			<key>path</key>
+			<string>Managers/SCAppInfoManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>630883681E80E56F006D2428</key>
+		<dict>
+			<key>fileRef</key>
+			<string>630883671E80E56F006D2428</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>630D15571E99F1B3001C1D87</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCLabel.swift</string>
+			<key>path</key>
+			<string>Utilities/SCLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>630D15581E99F1B3001C1D87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>630D15571E99F1B3001C1D87</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>632600FF1F423E0C00E28E9D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>SCToggleViewCell.xib</string>
+			<key>path</key>
+			<string>Nibs/SCToggleViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>632601001F423E0C00E28E9D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>632600FF1F423E0C00E28E9D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>632D311F1E9F5C55005D9999</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCTextButton.swift</string>
+			<key>path</key>
+			<string>Utilities/SCTextButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>632D31201E9F5C55005D9999</key>
+		<dict>
+			<key>fileRef</key>
+			<string>632D311F1E9F5C55005D9999</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>633292241E7D0D950090B09D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCDisclosureViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCDisclosureViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>633292251E7D0D950090B09D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>633292241E7D0D950090B09D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>633292261E7DE8B30090B09D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCTableViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCTableViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>633292271E7DE8B30090B09D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>633292261E7DE8B30090B09D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6332922A1E7DE9EC0090B09D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCLocalStorageManager.swift</string>
+			<key>path</key>
+			<string>Managers/SCLocalStorageManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6332922B1E7DE9EC0090B09D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6332922A1E7DE9EC0090B09D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63486DA81D3DE29C00795403</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Key.swift</string>
+			<key>path</key>
+			<string>Objects/Key.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63486DA91D3DE29C00795403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63486DA81D3DE29C00795403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63512E051F5083A400837032</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>zh-Hans</string>
+			<key>path</key>
+			<string>zh-Hans.lproj/Spycodes.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63512E061F50A4F900837032</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>zh-Hant</string>
+			<key>path</key>
+			<string>zh-Hant.lproj/LaunchScreen.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63512E071F50A4F900837032</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>zh-Hant</string>
+			<key>path</key>
+			<string>zh-Hant.lproj/Spycodes.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63512E081F50A4F900837032</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>zh-Hant</string>
+			<key>path</key>
+			<string>Spycodes/Storyboards/zh-Hant.lproj/Localizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63512E0C1F50A58500837032</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>zh-Hans</string>
+			<key>path</key>
+			<string>zh-Hans.lproj/LaunchScreen.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635464781EF9FC5C0013A196</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCTimelineHeaderViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCTimelineHeaderViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635464791EF9FC5C0013A196</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635464781EF9FC5C0013A196</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599B11F4DD2C800508FE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599BC1F4DD45100508FE9</string>
+				<string>635599BD1F4DD45100508FE9</string>
+				<string>635599BE1F4DD45100508FE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599B21F4DD35200508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCPregameMenuContainerViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Pregame/SCPregameMenuContainerViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599B31F4DD35200508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCPregameMenuMainViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Pregame/SCPregameMenuMainViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599B41F4DD35200508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCPregameMenuPageViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Pregame/SCPregameMenuPageViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599B51F4DD35200508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCPregameMenuSecondaryViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Pregame/SCPregameMenuSecondaryViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599B61F4DD35200508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCPregameRoomViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Pregame/SCPregameRoomViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599B71F4DD35200508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599B21F4DD35200508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599B81F4DD35200508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599B31F4DD35200508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599B91F4DD35200508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599B41F4DD35200508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599BA1F4DD35200508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599B51F4DD35200508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599BB1F4DD35200508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599B61F4DD35200508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599BC1F4DD45100508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCModalViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Base/SCModalViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599BD1F4DD45100508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCPopoverViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Base/SCPopoverViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599BE1F4DD45100508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Base/SCViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599BF1F4DD45100508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599BC1F4DD45100508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599C01F4DD45100508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599BD1F4DD45100508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599C11F4DD45100508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599BE1F4DD45100508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599C21F4DD8D300508FE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599C31F4DD8ED00508FE9</string>
+				<string>635599C41F4DD8ED00508FE9</string>
+				<string>635599C51F4DD8ED00508FE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Game</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599C31F4DD8ED00508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCGameViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Game/SCGameViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599C41F4DD8ED00508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCGameHelpViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Game/SCGameHelpViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599C51F4DD8ED00508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCTimelineViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Game/SCTimelineViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599C61F4DD8ED00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599C31F4DD8ED00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599C71F4DD8ED00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599C41F4DD8ED00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599C81F4DD8ED00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599C51F4DD8ED00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599C91F4DD94F00508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCCustomCategoryViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Pregame/SCCustomCategoryViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599CA1F4DD94F00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599C91F4DD94F00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599CB1F4DEEFB00508FE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599CC1F4DEF8700508FE9</string>
+				<string>635599CD1F4DEF8700508FE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Entry</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599CC1F4DEF8700508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCAccessCodeViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Entry/SCAccessCodeViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599CD1F4DEF8700508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCPlayerNameViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Entry/SCPlayerNameViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599CE1F4DEF8700508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599CC1F4DEF8700508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599CF1F4DEF8700508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599CD1F4DEF8700508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599D01F4DEFAE00508FE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599D11F4DEFBF00508FE9</string>
+				<string>635599D21F4DEFBF00508FE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Main</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599D11F4DEFBF00508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCMainSettingsViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Main/SCMainSettingsViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599D21F4DEFBF00508FE9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCMainViewController.swift</string>
+			<key>path</key>
+			<string>ViewControllers/Main/SCMainViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599D31F4DEFBF00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599D11F4DEFBF00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599D41F4DEFBF00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599D21F4DEFBF00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599D71F4E762B00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599D91F4E762B00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599D91F4E762B00508FE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599DA1F4E763D00508FE9</string>
+				<string>63512E051F5083A400837032</string>
+				<string>63512E071F50A4F900837032</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Spycodes.storyboard</string>
+			<key>path</key>
+			<string>Storyboards</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599DA1F4E763D00508FE9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Spycodes.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599DC1F4E76CC00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599DE1F4E76CC00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599DD1F4E76CC00508FE9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599DE1F4E76CC00508FE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599DD1F4E76CC00508FE9</string>
+				<string>63512E061F50A4F900837032</string>
+				<string>63512E0C1F50A58500837032</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>path</key>
+			<string>Storyboards</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599E11F4E778E00508FE9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599E21F4E778E00508FE9</string>
+				<string>635599E41F4E77B900508FE9</string>
+				<string>63512E081F50A4F900837032</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Localizable.strings</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599E21F4E778E00508FE9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Spycodes/Storyboards/Base.lproj/Localizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>635599E31F4E778E00508FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>635599E11F4E778E00508FE9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>635599E41F4E77B900508FE9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>zh-Hans</string>
+			<key>path</key>
+			<string>Spycodes/Storyboards/zh-Hans.lproj/Localizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6363EB641E7E4D5600CC287B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCUnderlineTextField.swift</string>
+			<key>path</key>
+			<string>Utilities/SCUnderlineTextField.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6363EB651E7E4D5600CC287B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6363EB641E7E4D5600CC287B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6363EB661E7E5A3900CC287B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCToggleViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCToggleViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6363EB671E7E5A3900CC287B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6363EB661E7E5A3900CC287B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6378C6501D4C6F46009BD0CA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>GameMode.swift</string>
+			<key>path</key>
+			<string>Objects/GameMode.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6378C6511D4C6F46009BD0CA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6378C6501D4C6F46009BD0CA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>637F195E1D46010E00FB4047</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Statistics.swift</string>
+			<key>path</key>
+			<string>Objects/Statistics.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>637F195F1D46010E00FB4047</key>
+		<dict>
+			<key>fileRef</key>
+			<string>637F195E1D46010E00FB4047</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>638350A31EA1E3CF003049EF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCImageButton.swift</string>
+			<key>path</key>
+			<string>Utilities/SCImageButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>638350A41EA1E3CF003049EF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>638350A31EA1E3CF003049EF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>638CE44C1EAB3D4B00033480</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Timeline.swift</string>
+			<key>path</key>
+			<string>Objects/Timeline.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>638CE44D1EAB3D4B00033480</key>
+		<dict>
+			<key>fileRef</key>
+			<string>638CE44C1EAB3D4B00033480</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>638CE44E1EAB45A500033480</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCTimelineViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCTimelineViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>638CE44F1EAB45A500033480</key>
+		<dict>
+			<key>fileRef</key>
+			<string>638CE44E1EAB45A500033480</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63920A351D3090BC0073E7F7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>630883671E80E56F006D2428</string>
+				<string>63EAF9A41D41F1C400BC554E</string>
+				<string>6332922A1E7DE9EC0090B09D</string>
+				<string>63920A361D3090D60073E7F7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Managers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63920A361D3090D60073E7F7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCMultipeerManager.swift</string>
+			<key>path</key>
+			<string>Managers/SCMultipeerManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63920A371D3090D60073E7F7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63920A361D3090D60073E7F7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639E17671E00EADB00640540</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCSectionHeaderViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCSectionHeaderViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>639E17681E00EADB00640540</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639E17671E00EADB00640540</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F88E71F0615540082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCArray.swift</string>
+			<key>path</key>
+			<string>Core/SCArray.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F88E81F0615540082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCConstants.swift</string>
+			<key>path</key>
+			<string>Core/SCConstants.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F88E91F0615540082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCFonts.swift</string>
+			<key>path</key>
+			<string>Core/SCFonts.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F88EA1F0615540082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCStates.swift</string>
+			<key>path</key>
+			<string>Core/SCStates.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F88EB1F0615540082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCStrings.swift</string>
+			<key>path</key>
+			<string>Core/SCStrings.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F88EC1F0615540082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCUIColor.swift</string>
+			<key>path</key>
+			<string>Core/SCUIColor.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F88ED1F0615540082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCWordBank.swift</string>
+			<key>path</key>
+			<string>Core/SCWordBank.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F88EE1F0615540082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F88E71F0615540082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F88EF1F0615540082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F88E81F0615540082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F88F01F0615540082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F88E91F0615540082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F88F11F0615540082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F88EA1F0615540082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F88F21F0615540082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F88EB1F0615540082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F88F31F0615540082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F88EC1F0615540082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F88F41F0615540082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F88ED1F0615540082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F88FF1F0F25660082D813</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>639F89001F0F2B730082D813</string>
+				<string>63D949E51F18534F00697779</string>
+				<string>632600FF1F423E0C00E28E9D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Nibs</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F89001F0F2B730082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>SCMultilineToggleViewCell.xib</string>
+			<key>path</key>
+			<string>Nibs/SCMultilineToggleViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F89011F0F2B730082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F89001F0F2B730082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639F89021F0F36120082D813</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ConsolidatedCategories.swift</string>
+			<key>path</key>
+			<string>Objects/ConsolidatedCategories.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>639F89031F0F36120082D813</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639F89021F0F36120082D813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63A04CF71D1A5713005A2914</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>63FFA4B01D50635B006A181B</string>
+				<string>63A04D021D1A5713005A2914</string>
+				<string>63A04D011D1A5713005A2914</string>
+				<string>B7BF666BAA7B3C26C5B6A539</string>
+				<string>7EF9474D1A1202AA6DB0DBB4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63A04CF81D1A5713005A2914</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0810</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>David Zhang</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>63A04CFF1D1A5713005A2914</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>DevelopmentTeam</key>
+						<string>3A8NZ732A3</string>
+						<key>LastSwiftMigration</key>
+						<string>0830</string>
+						<key>SystemCapabilities</key>
+						<dict>
+							<key>com.apple.GameCenter</key>
+							<dict>
+								<key>enabled</key>
+								<string>1</string>
+							</dict>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>63A04CFB1D1A5713005A2914</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+				<string>zh-Hans</string>
+				<string>zh-Hant</string>
+			</array>
+			<key>mainGroup</key>
+			<string>63A04CF71D1A5713005A2914</string>
+			<key>productRefGroup</key>
+			<string>63A04D011D1A5713005A2914</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>63A04CFF1D1A5713005A2914</string>
+			</array>
+		</dict>
+		<key>63A04CFB1D1A5713005A2914</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>63A04D131D1A5713005A2914</string>
+				<string>63A04D141D1A5713005A2914</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>63A04CFC1D1A5713005A2914</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>63D949DA1F16FABE00697779</string>
+				<string>63FDED371D264CF300142780</string>
+				<string>637F195F1D46010E00FB4047</string>
+				<string>638CE44F1EAB45A500033480</string>
+				<string>63EAF9A31D41D2E700BC554E</string>
+				<string>635599CF1F4DEF8700508FE9</string>
+				<string>635464791EF9FC5C0013A196</string>
+				<string>635599D41F4DEFBF00508FE9</string>
+				<string>63CB4F0C1D3CBCBC00211D3A</string>
+				<string>630D15581E99F1B3001C1D87</string>
+				<string>6363EB651E7E4D5600CC287B</string>
+				<string>63D256841E6BA6BA0061D80C</string>
+				<string>63D256871E6BA6BA0061D80C</string>
+				<string>639F88EF1F0615540082D813</string>
+				<string>630674181D51BE9800339EC8</string>
+				<string>63486DA91D3DE29C00795403</string>
+				<string>63D256811E6BA6BA0061D80C</string>
+				<string>639F89031F0F36120082D813</string>
+				<string>639F88F31F0615540082D813</string>
+				<string>63D949E81F18553000697779</string>
+				<string>630883681E80E56F006D2428</string>
+				<string>63D2568B1E6BA6BA0061D80C</string>
+				<string>632D31201E9F5C55005D9999</string>
+				<string>633292271E7DE8B30090B09D</string>
+				<string>63D256891E6BA6BA0061D80C</string>
+				<string>635599C71F4DD8ED00508FE9</string>
+				<string>635599C11F4DD45100508FE9</string>
+				<string>63CB4F081D3CB3C300211D3A</string>
+				<string>639F88F41F0615540082D813</string>
+				<string>639F88F21F0615540082D813</string>
+				<string>6332922B1E7DE9EC0090B09D</string>
+				<string>635599C61F4DD8ED00508FE9</string>
+				<string>63920A371D3090D60073E7F7</string>
+				<string>635599B81F4DD35200508FE9</string>
+				<string>638350A41EA1E3CF003049EF</string>
+				<string>63D256881E6BA6BA0061D80C</string>
+				<string>63EAF9A51D41F1C400BC554E</string>
+				<string>63CB4F0A1D3CB88D00211D3A</string>
+				<string>63D949E21F17F68900697779</string>
+				<string>635599B91F4DD35200508FE9</string>
+				<string>635599B71F4DD35200508FE9</string>
+				<string>63DEDEE81E88921200DE94A1</string>
+				<string>639F88F01F0615540082D813</string>
+				<string>635599D31F4DEFBF00508FE9</string>
+				<string>6363EB671E7E5A3900CC287B</string>
+				<string>63D2568A1E6BA6BA0061D80C</string>
+				<string>638CE44D1EAB3D4B00033480</string>
+				<string>635599C81F4DD8ED00508FE9</string>
+				<string>635599BA1F4DD35200508FE9</string>
+				<string>63FDED391D26557200142780</string>
+				<string>63D256821E6BA6BA0061D80C</string>
+				<string>6378C6511D4C6F46009BD0CA</string>
+				<string>639E17681E00EADB00640540</string>
+				<string>639F88EE1F0615540082D813</string>
+				<string>63FDED461D28B47200142780</string>
+				<string>635599CA1F4DD94F00508FE9</string>
+				<string>635599BF1F4DD45100508FE9</string>
+				<string>63FDED351D264BE800142780</string>
+				<string>635599C01F4DD45100508FE9</string>
+				<string>635599CE1F4DEF8700508FE9</string>
+				<string>635599BB1F4DD35200508FE9</string>
+				<string>63A04D041D1A5713005A2914</string>
+				<string>639F88F11F0615540082D813</string>
+				<string>633292251E7D0D950090B09D</string>
+				<string>63D7E73D1EB183EF00B2F536</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>63A04CFD1D1A5713005A2914</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>63FFA4B11D50635B006A181B</string>
+				<string>1F0C397CB76C8878B24830D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>63A04CFE1D1A5713005A2914</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>63D949E61F18534F00697779</string>
+				<string>639F89011F0F2B730082D813</string>
+				<string>635599D71F4E762B00508FE9</string>
+				<string>635599E31F4E778E00508FE9</string>
+				<string>63A04D0E1D1A5713005A2914</string>
+				<string>632601001F423E0C00E28E9D</string>
+				<string>635599DC1F4E76CC00508FE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>63A04CFF1D1A5713005A2914</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>63A04D151D1A5713005A2914</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A099851FC276BA395E02AB40</string>
+				<string>63A04CFC1D1A5713005A2914</string>
+				<string>63A04CFD1D1A5713005A2914</string>
+				<string>63A04CFE1D1A5713005A2914</string>
+				<string>1AF75283B65C4B918EC70F67</string>
+				<string>CED194B1897EE1C60EC80831</string>
+				<string>D0B4BDE54DBE91F87D6885B4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Spycodes</string>
+			<key>productName</key>
+			<string>Spycodes</string>
+			<key>productReference</key>
+			<string>63A04D001D1A5713005A2914</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>63A04D001D1A5713005A2914</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Spycodes.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>63A04D011D1A5713005A2914</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>63A04D001D1A5713005A2914</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63A04D021D1A5713005A2914</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>63A04D031D1A5713005A2914</string>
+				<string>63A04D0D1D1A5713005A2914</string>
+				<string>63A04D121D1A5713005A2914</string>
+				<string>63A04D1B1D1A7F2B005A2914</string>
+				<string>63920A351D3090BC0073E7F7</string>
+				<string>639F88FF1F0F25660082D813</string>
+				<string>63FDED331D264BD800142780</string>
+				<string>63FA54E31D1BCFA6004515DA</string>
+				<string>63D256751E6BA6600061D80C</string>
+				<string>63A04D1A1D1A7F25005A2914</string>
+				<string>63FDED421D28B42300142780</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Spycodes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63A04D031D1A5713005A2914</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>path</key>
+			<string>SCAppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63A04D041D1A5713005A2914</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63A04D031D1A5713005A2914</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63A04D0D1D1A5713005A2914</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63A04D0E1D1A5713005A2914</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63A04D0D1D1A5713005A2914</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63A04D121D1A5713005A2914</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63A04D131D1A5713005A2914</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED</key>
+				<string>YES</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>63A04D141D1A5713005A2914</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED</key>
+				<string>YES</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Owholemodule</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>63A04D151D1A5713005A2914</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>63A04D161D1A5713005A2914</string>
+				<string>63A04D171D1A5713005A2914</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>63A04D161D1A5713005A2914</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2842E0F999A033920F646AF6</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Spycodes/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.davidzhang.Spycodes</string>
+				<key>PRODUCT_NAME</key>
+				<string>Spycodes</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>63A04D171D1A5713005A2914</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>23F9D4FD36303546D924BA3E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Spycodes/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.davidzhang.Spycodes</string>
+				<key>PRODUCT_NAME</key>
+				<string>Spycodes</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>63A04D1A1D1A7F25005A2914</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599B11F4DD2C800508FE9</string>
+				<string>635599CB1F4DEEFB00508FE9</string>
+				<string>635599C21F4DD8D300508FE9</string>
+				<string>635599D01F4DEFAE00508FE9</string>
+				<string>63A3E1E71F3450CD00657243</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View Controllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63A04D1B1D1A7F2B005A2914</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>639F88E71F0615540082D813</string>
+				<string>639F88E81F0615540082D813</string>
+				<string>639F88E91F0615540082D813</string>
+				<string>639F88EA1F0615540082D813</string>
+				<string>639F88EB1F0615540082D813</string>
+				<string>639F88EC1F0615540082D813</string>
+				<string>639F88ED1F0615540082D813</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Core</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63A3E1E71F3450CD00657243</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599C91F4DD94F00508FE9</string>
+				<string>635599B21F4DD35200508FE9</string>
+				<string>635599B31F4DD35200508FE9</string>
+				<string>635599B41F4DD35200508FE9</string>
+				<string>635599B51F4DD35200508FE9</string>
+				<string>635599B61F4DD35200508FE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pregame</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63CB4F071D3CB3C300211D3A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCGameRoomViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCGameRoomViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63CB4F081D3CB3C300211D3A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63CB4F071D3CB3C300211D3A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63CB4F091D3CB88D00211D3A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Card.swift</string>
+			<key>path</key>
+			<string>Objects/Card.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63CB4F0A1D3CB88D00211D3A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63CB4F091D3CB88D00211D3A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63CB4F0B1D3CBCBC00211D3A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>CardCollection.swift</string>
+			<key>path</key>
+			<string>Objects/CardCollection.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63CB4F0C1D3CBCBC00211D3A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63CB4F0B1D3CBCBC00211D3A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D256751E6BA6600061D80C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>63D256761E6BA6BA0061D80C</string>
+				<string>63D256771E6BA6BA0061D80C</string>
+				<string>638350A31EA1E3CF003049EF</string>
+				<string>630D15571E99F1B3001C1D87</string>
+				<string>63D256791E6BA6BA0061D80C</string>
+				<string>63D2567C1E6BA6BA0061D80C</string>
+				<string>63D7E73C1EB183EF00B2F536</string>
+				<string>63D2567D1E6BA6BA0061D80C</string>
+				<string>63D2567E1E6BA6BA0061D80C</string>
+				<string>63D2567F1E6BA6BA0061D80C</string>
+				<string>632D311F1E9F5C55005D9999</string>
+				<string>63D256801E6BA6BA0061D80C</string>
+				<string>6363EB641E7E4D5600CC287B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Utilities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63D256761E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCButton.swift</string>
+			<key>path</key>
+			<string>Utilities/SCButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63D256771E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCHelpDescriptionLabel.swift</string>
+			<key>path</key>
+			<string>Utilities/SCHelpDescriptionLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63D256791E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCLogoLabel.swift</string>
+			<key>path</key>
+			<string>Utilities/SCLogoLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63D2567C1E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCNavigationBarLabel.swift</string>
+			<key>path</key>
+			<string>Utilities/SCNavigationBarLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63D2567D1E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCRoundedButton.swift</string>
+			<key>path</key>
+			<string>Utilities/SCRoundedButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63D2567E1E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCSingleCharacterTextField.swift</string>
+			<key>path</key>
+			<string>Utilities/SCSingleCharacterTextField.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63D2567F1E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCStatusLabel.swift</string>
+			<key>path</key>
+			<string>Utilities/SCStatusLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63D256801E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCTextField.swift</string>
+			<key>path</key>
+			<string>Utilities/SCTextField.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63D256811E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D256761E6BA6BA0061D80C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D256821E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D256771E6BA6BA0061D80C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D256841E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D256791E6BA6BA0061D80C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D256871E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D2567C1E6BA6BA0061D80C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D256881E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D2567D1E6BA6BA0061D80C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D256891E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D2567E1E6BA6BA0061D80C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D2568A1E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D2567F1E6BA6BA0061D80C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D2568B1E6BA6BA0061D80C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D256801E6BA6BA0061D80C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D7E73C1EB183EF00B2F536</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCReadyStatusLabel.swift</string>
+			<key>path</key>
+			<string>Utilities/SCReadyStatusLabel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63D7E73D1EB183EF00B2F536</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D7E73C1EB183EF00B2F536</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D949D91F16FABE00697779</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCPickerViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCPickerViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63D949DA1F16FABE00697779</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D949D91F16FABE00697779</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D949E11F17F68900697779</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>CustomCategory.swift</string>
+			<key>path</key>
+			<string>Objects/CustomCategory.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63D949E21F17F68900697779</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D949E11F17F68900697779</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D949E51F18534F00697779</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>SCTextFieldViewCell.xib</string>
+			<key>path</key>
+			<string>Nibs/SCTextFieldViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63D949E61F18534F00697779</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D949E51F18534F00697779</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63D949E71F18553000697779</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCTextFieldViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCTextFieldViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63D949E81F18553000697779</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63D949E71F18553000697779</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63DEDEE71E88921200DE94A1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Event.swift</string>
+			<key>path</key>
+			<string>Objects/Event.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63DEDEE81E88921200DE94A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63DEDEE71E88921200DE94A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63EAF9A21D41D2E700BC554E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>Round.swift</string>
+			<key>path</key>
+			<string>Objects/Round.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63EAF9A31D41D2E700BC554E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63EAF9A21D41D2E700BC554E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63EAF9A41D41F1C400BC554E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SCAudioManager.swift</string>
+			<key>path</key>
+			<string>Managers/SCAudioManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63EAF9A51D41F1C400BC554E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63EAF9A41D41F1C400BC554E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63FA54E31D1BCFA6004515DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>635599E11F4E778E00508FE9</string>
+				<string>635599DE1F4E76CC00508FE9</string>
+				<string>635599D91F4E762B00508FE9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Storyboards</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63FDED331D264BD800142780</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>63CB4F091D3CB88D00211D3A</string>
+				<string>63CB4F0B1D3CBCBC00211D3A</string>
+				<string>639F89021F0F36120082D813</string>
+				<string>63D949E11F17F68900697779</string>
+				<string>63DEDEE71E88921200DE94A1</string>
+				<string>6378C6501D4C6F46009BD0CA</string>
+				<string>63486DA81D3DE29C00795403</string>
+				<string>63FDED341D264BE800142780</string>
+				<string>63FDED381D26557200142780</string>
+				<string>63EAF9A21D41D2E700BC554E</string>
+				<string>637F195E1D46010E00FB4047</string>
+				<string>63FDED361D264CF300142780</string>
+				<string>638CE44C1EAB3D4B00033480</string>
+				<string>630674171D51BE9800339EC8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Objects</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63FDED341D264BE800142780</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>Player.swift</string>
+			<key>path</key>
+			<string>Objects/Player.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63FDED351D264BE800142780</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63FDED341D264BE800142780</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63FDED361D264CF300142780</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Team.swift</string>
+			<key>path</key>
+			<string>Objects/Team.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63FDED371D264CF300142780</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63FDED361D264CF300142780</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63FDED381D26557200142780</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>Room.swift</string>
+			<key>path</key>
+			<string>Objects/Room.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63FDED391D26557200142780</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63FDED381D26557200142780</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63FDED421D28B42300142780</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>633292241E7D0D950090B09D</string>
+				<string>63CB4F071D3CB3C300211D3A</string>
+				<string>63D949D91F16FABE00697779</string>
+				<string>63FDED451D28B47200142780</string>
+				<string>639E17671E00EADB00640540</string>
+				<string>633292261E7DE8B30090B09D</string>
+				<string>63D949E71F18553000697779</string>
+				<string>635464781EF9FC5C0013A196</string>
+				<string>638CE44E1EAB45A500033480</string>
+				<string>6363EB661E7E5A3900CC287B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63FDED451D28B47200142780</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>name</key>
+			<string>SCPregameRoomViewCell.swift</string>
+			<key>path</key>
+			<string>Views/SCPregameRoomViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.swift</string>
+		</dict>
+		<key>63FDED461D28B47200142780</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63FDED451D28B47200142780</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>63FFA4B01D50635B006A181B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GameKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/GameKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>63FFA4B11D50635B006A181B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63FFA4B01D50635B006A181B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7EF9474D1A1202AA6DB0DBB4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9CC921B002269746A71C6152</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9CC921B002269746A71C6152</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_Spycodes.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A099851FC276BA395E02AB40</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array>
+				<string>${PODS_PODFILE_DIR_PATH}/Podfile.lock</string>
+				<string>${PODS_ROOT}/Manifest.lock</string>
+			</array>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array>
+				<string>$(DERIVED_FILE_DIR)/Pods-Spycodes-checkManifestLockResult.txt</string>
+			</array>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_PODFILE_DIR_PATH}/Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [ $? != 0 ] ; then
+    # print error to STDERR
+    echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." &gt;&amp;2
+    exit 1
+fi
+# This output is used by Xcode 'outputs' to avoid re-running this script phase.
+echo "SUCCESS" &gt; "${SCRIPT_OUTPUT_FILE_0}"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B7BF666BAA7B3C26C5B6A539</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2842E0F999A033920F646AF6</string>
+				<string>23F9D4FD36303546D924BA3E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CED194B1897EE1C60EC80831</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Spycodes/Pods-Spycodes-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D0B4BDE54DBE91F87D6885B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Tailor</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>if hash tailor 2&gt;/dev/null; then
+  tailor
+else
+  echo "warning: Please install Tailor from https://tailor.sh"
+fi</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>63A04CF81D1A5713005A2914</string>
+</dict>
+</plist>
